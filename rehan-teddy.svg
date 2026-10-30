@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 650" role="img" aria-label="Animated fluffy brown teddy bear with a baby blue bow">
+<defs>
+ <radialGradient id="fur" cx="32%" cy="22%" r="78%"><stop offset="0" stop-color="#f2d2a6"/><stop offset=".38" stop-color="#c99563"/><stop offset=".78" stop-color="#99623f"/><stop offset="1" stop-color="#71452f"/></radialGradient>
+ <radialGradient id="furLight" cx="30%" cy="25%" r="75%"><stop offset="0" stop-color="#f8dfbd"/><stop offset=".55" stop-color="#d5a477"/><stop offset="1" stop-color="#9b6747"/></radialGradient>
+ <radialGradient id="muzzle" cx="35%" cy="25%" r="75%"><stop offset="0" stop-color="#ffe9d1"/><stop offset="1" stop-color="#c9936c"/></radialGradient>
+ <linearGradient id="bow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d8f1ff"/><stop offset=".45" stop-color="#83c5ee"/><stop offset="1" stop-color="#438fc7"/></linearGradient>
+ <radialGradient id="eye" cx="30%" cy="25%"><stop stop-color="#fff"/><stop offset=".2" stop-color="#4b3026"/><stop offset="1" stop-color="#160f0d"/></radialGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="13"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="1.5"/></filter>
+ <pattern id="furTexture" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M3 3q4 5 1 9M12 1q-3 5 1 9M8 13q4 1 5 4" fill="none" stroke="#fff0d9" stroke-opacity=".22" stroke-width="1.5" stroke-linecap="round"/></pattern>
+</defs>
+<ellipse cx="300" cy="600" rx="170" ry="25" fill="#5c87aa" opacity=".2" filter="url(#shadow)"/>
+<g>
+ <animateTransform attributeName="transform" type="translate" values="0 0;0 -11;0 0" dur="4s" repeatCount="indefinite"/>
+ <!-- feet and body -->
+ <ellipse cx="218" cy="535" rx="90" ry="78" fill="url(#fur)"/>
+ <ellipse cx="382" cy="535" rx="90" ry="78" fill="url(#fur)"/>
+ <ellipse cx="300" cy="440" rx="157" ry="175" fill="url(#fur)"/>
+ <ellipse cx="300" cy="440" rx="157" ry="175" fill="url(#furTexture)" opacity=".55"/>
+ <ellipse cx="300" cy="478" rx="91" ry="116" fill="url(#furLight)" opacity=".8"/>
+ <!-- arms -->
+ <ellipse cx="158" cy="408" rx="62" ry="112" transform="rotate(24 158 408)" fill="url(#fur)"/>
+ <ellipse cx="442" cy="408" rx="62" ry="112" transform="rotate(-24 442 408)" fill="url(#fur)"/>
+ <!-- ears -->
+ <circle cx="190" cy="135" r="77" fill="url(#fur)"/><circle cx="410" cy="135" r="77" fill="url(#fur)"/>
+ <circle cx="190" cy="137" r="43" fill="#b87959" opacity=".8"/><circle cx="410" cy="137" r="43" fill="#b87959" opacity=".8"/>
+ <!-- head -->
+ <ellipse cx="300" cy="245" rx="166" ry="157" fill="url(#furLight)"/>
+ <ellipse cx="300" cy="245" rx="166" ry="157" fill="url(#furTexture)" opacity=".55"/>
+ <!-- cheeks -->
+ <ellipse cx="202" cy="300" rx="32" ry="20" fill="#e9958c" opacity=".35"/><ellipse cx="398" cy="300" rx="32" ry="20" fill="#e9958c" opacity=".35"/>
+ <!-- eyes -->
+ <ellipse cx="239" cy="245" rx="17" ry="23" fill="url(#eye)"/><ellipse cx="361" cy="245" rx="17" ry="23" fill="url(#eye)"/>
+ <circle cx="234" cy="237" r="5" fill="#fff"/><circle cx="356" cy="237" r="5" fill="#fff"/>
+ <!-- muzzle -->
+ <ellipse cx="300" cy="315" rx="77" ry="59" fill="url(#muzzle)"/>
+ <ellipse cx="300" cy="291" rx="24" ry="17" fill="#57372d"/>
+ <path d="M300 306v17q-16 17-32 0M300 323q16 17 32 0" fill="none" stroke="#75483b" stroke-width="5" stroke-linecap="round"/>
+ <!-- soft fur glints -->
+ <path d="M180 198q18-30 45-36M370 162q29 6 48 34M166 420q-14 35 1 61M434 420q14 35-1 61" fill="none" stroke="#fff1dc" stroke-opacity=".38" stroke-width="8" stroke-linecap="round"/>
+ <!-- bow -->
+ <path d="M265 373C215 325 202 391 255 411C270 417 285 397 300 389C315 397 330 417 345 411C398 391 385 325 335 373L300 391Z" fill="url(#bow)" stroke="#4d96ca" stroke-width="4"/>
+ <ellipse cx="300" cy="390" rx="20" ry="18" fill="#d9f2ff" stroke="#4d96ca" stroke-width="4"/>
+ <path d="M292 384q8-8 16 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+</g>
+</svg>
