@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#c6e5ff"><title>Enter Ali's Little World 💙</title><link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
+<body class="login-body">
+<a class="creator-credit" href="home.html">Created by <strong>Rehan Mamo</strong> <span>♡</span></a>
+<div class="ambient"></div><div class="stars"></div>
+<main class="login-shell">
+  <div class="login-left">
+    <div class="login-kicker">✦ A little world full of love ✦</div>
+    <h1>Some magic<br>is waiting <em>inside.</em></h1>
+    <p>Step into a dreamy little celebration made especially for baby Ali and mama Romesa.</p>
+    <div class="login-badges"><span>☁ Soft clouds</span><span>✧ Tiny wishes</span><span>♡ Endless love</span></div>
+    <div class="login-footer-note">A special welcome, from our hearts to yours.</div>
+  </div>
+  <div class="login-right">
+    <div class="login-card">
+      <div class="login-card-glow"></div>
+      <div class="login-bear-wrap">
+        <div class="login-orbit"></div>
+        <img class="login-bear-gif" src="assets/ali-teddy-new.svg" alt="Animated fluffy brown teddy bear with a baby blue bow">
+        
+        <span class="login-spark spark-a">✦</span><span class="login-spark spark-b">✧</span>
+      </div>
+      <div class="login-card-kicker">WELCOME, DEAR FRIEND</div>
+      <h2>Enter the <em>Little World</em></h2>
+      <p class="login-card-desc">A tiny prince is waiting to say hello!</p>
+      <form id="welcomeForm">
+        <label for="visitorName">Your name</label>
+        <input id="visitorName" type="text" placeholder="Enter your name (optional)" maxlength="32">
+        <button class="btn primary login-submit" type="submit">Open the magic <span>→</span></button>
+      </form>
+      <div class="login-secure-note">✧ Made with love for Ali & Romesa ✧</div>
+    </div>
+  </div>
+</main>
+<script>
+document.getElementById('welcomeForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = document.getElementById('visitorName').value.trim();
+  try { sessionStorage.setItem('aliVisitorName', name); } catch(err) {}
+  window.location.href = 'home.html';
+});
+const stars = document.querySelector('.stars');
+for(let i=0;i<35;i++){const s=document.createElement('i');s.textContent=i%3===0?'✦':'·';s.style.cssText=`position:absolute;left:${Math.random()*100}%;top:${Math.random()*100}%;font-style:normal;color:white;font-size:${10+Math.random()*15}px;opacity:${.25+Math.random()*.5};animation:twinkle ${2+Math.random()*4}s infinite alternate`;stars.appendChild(s);}
+</script></body></html>
